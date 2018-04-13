@@ -1,5 +1,8 @@
 package com.example.eurekaclient.dto;
 
+import com.alibaba.fastjson.annotation.JSONField;
+import com.alibaba.fastjson.serializer.SerializerFeature;
+
 /**
  * UserInfoDto
  */
@@ -9,6 +12,7 @@ public class UserInfoDto {
     /* 用户名 */
     private String username;
     /* 密码 */
+    @JSONField(serialzeFeatures = SerializerFeature.WriteMapNullValue)
     private String password;
 
     public long getId() {

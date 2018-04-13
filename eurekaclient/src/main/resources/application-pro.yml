@@ -21,12 +21,3 @@ db:
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8
     username: root
     password: zxcv123
-
-config:
-  redisServer:
-    - 127.0.0.1:6380
-    - 127.0.0.1:6381
-    - 127.0.0.1:6382
-    - 127.0.0.1:6383
-    - 127.0.0.1:6384
-    - 127.0.0.1:6385

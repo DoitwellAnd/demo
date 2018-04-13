@@ -16,6 +16,10 @@ spring:
     content-type: text/html
     cache: false
     enabled: true
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
 
 db:
   product:
@@ -30,6 +34,11 @@ eureka:
 
 EUREKASERVERPROVIDER:
   ribbon:
+    ConnectTimeout: 250
+    ReadTimeOut: 1000
+    OkToRetryOnAllOperations: true
+    MaxAutoRetriesNextServer: 2
+    MaxAutoRetries: 1
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
 config:
