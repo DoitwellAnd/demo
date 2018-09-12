@@ -15,8 +15,8 @@ import java.util.List;
 public class FrameworkConfig extends WebMvcConfigurerAdapter {
 
     @Bean
-    public SystemlInterceptor systemlInterceptor(){
-        return new SystemlInterceptor();
+    public SystemInterceptor systemlInterceptor(){
+        return new SystemInterceptor();
     }
 
     @Override

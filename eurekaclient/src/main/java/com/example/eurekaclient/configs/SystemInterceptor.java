@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * 全局拦截器。
  */
-public class SystemlInterceptor implements HandlerInterceptor {
+public class SystemInterceptor implements HandlerInterceptor {
     private final SystemLogger logger = SystemLoggerFactory.getLogger(getClass());
 
     @Override
